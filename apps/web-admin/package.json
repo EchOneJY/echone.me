@@ -1,0 +1,31 @@
+{
+  "name": "@echone/web-admin",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode development",
+    "preview": "vite preview"
+  },
+  "imports": {
+    "@/*": "./src/*"
+  },
+  "dependencies": {
+    "@echone-core/composables": "workspace:*",
+    "@echone-core/icons": "workspace:*",
+    "@echone-core/shadcn-ui": "workspace:*",
+    "@echone-core/shared": "workspace:*",
+    "@intlify/core-base": "^9.14.0",
+    "@vueuse/core": "^11.0.3",
+    "@vueuse/integrations": "^11.0.3",
+    "ant-design-vue": "^4.2.3",
+    "axios": "^1.7.5",
+    "dayjs": "^1.11.13",
+    "echarts": "^5.5.1",
+    "pinia": "2.2.2",
+    "pinia-plugin-persistedstate": "^3.2.3",
+    "vue": "^3.4.38",
+    "vue-i18n": "^9.14.0",
+    "vue-router": "^4.4.3",
+    "watermark-js-plus": "^1.5.4"
+  }
+}

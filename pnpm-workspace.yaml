@@ -1,0 +1,6 @@
+packages:
+  - "internal/*"
+  - "internal/lint-configs/*"
+  - "packages/*"
+  - "apps/*"
+  - "docs"

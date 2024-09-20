@@ -1,0 +1,39 @@
+{
+  "name": "@echone-core/composables",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm unbuild"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "development": "./src/index.ts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      }
+    }
+  },
+  "dependencies": {
+    "@echone-core/shared": "workspace:*",
+    "@vueuse/core": "^11.0.3",
+    "sortablejs": "^1.15.2",
+    "vue": "^3.4.38"
+  },
+  "devDependencies": {
+    "@types/sortablejs": "^1.15.8"
+  }
+}
